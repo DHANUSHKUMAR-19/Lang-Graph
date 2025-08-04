@@ -81,3 +81,12 @@ resp=call_graph(Command(resume=decision))
 print(resp)
 
 
+# @traceable
+# def call_graph(query: str):
+#     state = graph.invoke({"messages": [{"role": "user", "content": query}]}, config=config)
+#     return state["messages"][-1].content
+#
+# @traceable
+# def resume_graph(decision: str):
+#     state = graph.invoke(Command(resume=decision), config=config)
+#     return state["messages"][-1].content
